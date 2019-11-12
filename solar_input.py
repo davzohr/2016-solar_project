@@ -98,7 +98,7 @@ def write_space_objects_data_to_file(output_filename, space_objects):
     """
     with open(output_filename, 'w') as out_file:
         for obj in space_objects:
-            print( "%f %s %f %f %f %f %f" % (float(obj.R), obj.color, float(obj.m), float(obj.x), float(obj.y), float(obj.Vx), float(obj.Vy)), file=out_file)
+            print( "%s %f %s %f %f %f %f %f" % (obj.type, float(obj.R), obj.color, float(obj.m), float(obj.x), float(obj.y), float(obj.Vx), float(obj.Vy)), file=out_file)
 
 
 if __name__ == "__main__":
